@@ -1,11 +1,13 @@
 package figuras;
 
-public class Circulo {
+import static figuras.Circulo.PI;
 
-    public static final double PI = 3.1416;
+public class Triangulo {
+
+    public double lado1, lado2, lado3, area, sp, perimetro;
     public double radio;
 
-    public Circulo() {
+    public Triangulo() {
         radio = 0.00;
     }
 
@@ -17,16 +19,18 @@ public class Circulo {
         return radio;
     }
 
-    public double areaCirculo() {
+    public double areaTriangulo() {
         double area;
-        area = PI * (radio * radio);
+        area = (Math.sqrt(sp * (sp - lado1) * (sp - lado2) * (sp - lado3)));
         return area;
     }
 
-    public double Perimetro() {
+    public double PerimetroTriangulo() {
         double Perimetro;
         Perimetro = 2 * PI * radio;
         return Perimetro;
     }
+
+
 
 }
